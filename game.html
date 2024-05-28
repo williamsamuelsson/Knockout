@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knockout Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span id="user-name"></span></h1>
+    </header>
+    <main>
+        <div id="select-knockout">
+            <h2>Select Your Knockout Number</h2>
+            <button onclick="selectKnockout(6)">6</button>
+            <button onclick="selectKnockout(7)">7</button>
+            <button onclick="selectKnockout(8)">8</button>
+            <button onclick="selectKnockout(9)">9</button>
+        </div>
+        <div id="game-play" style="display:none;">
+            <h2>Knockout Game</h2>
+            <p>Your Knockout Number: <span id="knockout-number"></span></p>
+            <p>Total Score: <span id="total-score">0</span></p>
+            <button onclick="rollDice()">Roll Dice</button>
+            <p id="dice-result"></p>
+        </div>
+    </main>
+</body>
+</html>
