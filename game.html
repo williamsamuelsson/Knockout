@@ -23,8 +23,17 @@
             <h2>Knockout Game</h2>
             <p>Your Knockout Number: <span id="knockout-number"></span></p>
             <p>Total Score: <span id="total-score">0</span></p>
-            <button onclick="rollDice()">Roll Dice</button>
+            <button id="rollBtn" onclick="rollDice()">Roll Dice</button>
+            <div id="dice-container">
+                <img id="dice1" src="d1.png" alt="Dice 1">
+                <img id="dice2" src="d1.png" alt="Dice 2">
+            </div>
             <p id="dice-result"></p>
+        </div>
+        <div id="game-over" style="position:absolute; display: none;">
+            <img src="knockout.png" alt="Knockout" id="knockout-image">
+            <p>Your total score is <span id="final-score"></span>.</p>
+            <button onclick="resetGame()">Play Again</button>
         </div>
     </main>
 </body>
