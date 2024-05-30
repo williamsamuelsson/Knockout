@@ -22,10 +22,10 @@ function selectKnockout(number) {
 }
 
 function rollDice() {
-    const dice1_value = Math.floor(Math.random() * 6) + 1;
-    const dice2_value = Math.floor(Math.random() * 6) + 1;
+    const dice1_value = Math.floor(Math.random() * 6)+1;
+    const dice2_value = Math.floor(Math.random() * 6)+1;
     const result = dice1_value + dice2_value;
-    let images = ["d1.png", "d2.png", "d3.png", "d3.png", "d4.png", "d5.png", "d6.png"];
+    let images = ["d1.png", "d2.png", "d3.png", "d4.png", "d5.png", "d6.png"];
 
     dice1.src = images[dice1_value - 1];
     dice2.src = images[dice2_value - 1];
